@@ -60,7 +60,7 @@ chartGroup.selectAll("text")
 
 // Add legend
 const legend = svg.append("g")
-    .attr("transform", `translate(${width - 180}, ${margin})`);
+    .attr("transform", `translate(${width - 380}, ${margin})`);
 
 data.forEach((d, i) => {
     const legendRow = legend.append("g")
