@@ -5,7 +5,7 @@ const data = [
     { label: "Design C", value: 25, feedback: "Budget-friendly and easy to manage" }
 ];
 
-const width = 1500, height = 400, margin = 40;
+const width = 700, height = 400, margin = 40;
 const radius = Math.min(width, height) / 2 - margin;
 
 const svg = d3.select("#chart")
@@ -52,8 +52,8 @@ chartGroup.selectAll("path")
 chartGroup.selectAll("text")
     .data(data_ready)
     .join("text")
-    .text(d => `${d.data.label}: ${d.data.value}`)
-    // .text(d => `${d.data.value}%`)
+    .text(d => `${d.data.label}%`)
+    // .text(d => `${d.data.label}: ${d.data.value}`)
     .attr("transform", d => `translate(${arc.centroid(d)})`)
     .style("text-anchor", "middle")
     .style("font-size", "12px")
