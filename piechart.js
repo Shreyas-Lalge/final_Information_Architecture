@@ -54,7 +54,7 @@ chartGroup.selectAll("text")
     .join("text")
     // .text(d => `${d.data.label}: ${d.data.value}`)
     .text(d => `${d.data.value}%`)
-    .attr("transform", d => `translate(${arc.centroid(d)})`)
+    // .attr("transform", d => `translate(${arc.centroid(d)})`)
     .style("text-anchor", "middle")
     .style("font-size", "12px")
     .style("fill", "#000");
