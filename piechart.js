@@ -5,7 +5,7 @@ const data = [
     { label: "Design C", value: 25, feedback: "Budget-friendly and easy to manage" }
 ];
 
-const width = 700, height = 400, margin = 40;
+const width = 1500, height = 400, margin = 40;
 const radius = Math.min(width, height) / 2 - margin;
 
 const svg = d3.select("#chart")
